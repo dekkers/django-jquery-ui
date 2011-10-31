@@ -10,4 +10,4 @@ def include_jquery_ui():
     if hasattr(settings, 'STATIC_URL'):
         url = getattr(settings, 'STATIC_URL')
 
-    return "<script type='text/javascript' src='%s'></script>" % os.path.join(url, 'jquery-ui', 'jquery-ui-1.8.6.custom.min.js')
+    return "<script type='text/javascript' src='%s'></script>" % os.path.join(url, 'jquery-ui', 'jquery-ui-1.8.16.custom.min.js')
