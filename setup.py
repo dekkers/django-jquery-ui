@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'django-jquery-ui',
-    version = '0.1.1',
+    version = '0.2',
     description = "jquery-ui django app - bundles jQuery UI for django-staticfiles",
     long_description = open('README.rst').read(),
     author = 'Aljosa Mohorovic',
