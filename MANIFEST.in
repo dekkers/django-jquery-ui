@@ -1,3 +1,3 @@
 include LICENSE.txt
 include README.rst
-recursive-include django_jquery_ui/media *
+recursive-include django_jquery_ui/static *

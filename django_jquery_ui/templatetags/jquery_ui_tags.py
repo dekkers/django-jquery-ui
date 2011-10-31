@@ -6,8 +6,4 @@ register = template.Library()
 
 @register.simple_tag
 def include_jquery_ui():
-    url = getattr(settings, 'MEDIA_URL')
-    if hasattr(settings, 'STATIC_URL'):
-        url = getattr(settings, 'STATIC_URL')
-
-    return "<script type='text/javascript' src='%s'></script>" % os.path.join(url, 'jquery-ui', 'jquery-ui-1.8.16.custom.min.js')
+    return "<script type='text/javascript' src='%s'></script>" % os.path.join(getattr(settings, 'STATIC_URL'), 'jquery-ui', 'jquery-ui-1.8.16.custom.min.js')
